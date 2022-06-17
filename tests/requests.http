@@ -1,0 +1,3 @@
+### Intentionally triggers "Bad Request" by leaving out mandatory header property "Client-Locale"
+GET http://localhost:3000/tests
+# Client-Locale: en-US

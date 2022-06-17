@@ -1,0 +1,15 @@
+{
+  "name": "fastify-error-handler-issue",
+  "version": "1.0.0",
+  "description": "Repository to demonstrate differences between error handler logic in fastify v3/v4",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "Chatplane OHG",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^3.26.0"
+  }
+}

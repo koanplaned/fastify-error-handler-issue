@@ -2,7 +2,16 @@ import Fastify from 'fastify';
 import { routes } from './routes.js';
 
 const fastify = Fastify({
-    logger: true
+    logger: {
+        transport: {
+            target: 'pino-pretty',
+            options: {
+                colorize: true,
+                translateTime: true,
+                ignore: 'pid,hostname,request-id,responseTime,req,res'
+            }
+        }
+    }
 });
 
 fastify.setErrorHandler(function (error, request, reply) {

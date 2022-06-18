@@ -1,3 +1,12 @@
 ### Intentionally triggers "Bad Request" by leaving out mandatory header property "Client-Locale"
 GET http://localhost:3000/tests
 # Client-Locale: en-US
+
+
+### Requests for v4-2
+
+### Option 1: async handler returns reply objecte
+GET http://localhost:3000/tests/option-1
+
+### Option 2: removed "async" from route handler
+GET http://localhost:3000/tests/option-2

@@ -22,6 +22,10 @@ fastify.setErrorHandler(function (error, request, reply) {
     };
 
     reply.code(toSend.statusCode).send(toSend);
+
+    // reply.send(error);
+    // return reply;
+
     /* 
     New error handler logic with fastify v4.
     Logic changed based on https://github.com/fastify/help/issues/695

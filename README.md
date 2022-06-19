@@ -45,8 +45,8 @@ After more discussions in https://github.com/fastify/help/issues/695, an additio
 
 The previous /test-route was split up into two routes:
 
-GET /tests/option-1 -> async route handler with additional return statement
-GET /tests/option-2 -> route handler without async option and without return statement
+- GET /tests/option-1 -> async route handler with additional return statement
+- GET /tests/option-2 -> route handler without async option and without return statement
 
 # Setup
 

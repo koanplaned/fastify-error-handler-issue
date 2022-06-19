@@ -39,6 +39,15 @@ Connection: close
 
 Issue: v4-application should return also with 400 and property "error", as it was before in v3-application.
 
+## Update
+
+After more discussions in https://github.com/fastify/help/issues/695, an additional folder v4-2 was added to the repository to test possible solutions by changing the route handler implementation in routes.js
+
+The previous /test-route was split up into two routes:
+
+GET /tests/option-1 -> async route handler with additional return statement
+GET /tests/option-2 -> route handler without async option and without return statement
+
 # Setup
 
 You can install each application separately by switching to their respective folders and executing **npm install**

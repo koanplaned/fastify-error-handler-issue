@@ -63,6 +63,10 @@ npm install
 cd v4
 npm install
 
+# Install v4-2
+cd v4-2
+npm install
+
 # Run applications
 npm run start
 ```
